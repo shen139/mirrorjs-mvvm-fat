@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mirrorjs MVVM Fat Client</title>
+
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/start/jquery-ui.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.mirrorjs.com/0.1.3/mirror.css" type="text/css"/>
+
+    <script src="./build/mirrorjs/mirror.js"></script>
+    <script src="./build/mirrorjs-widgets/textfield.js"></script>
+    <script src="./build/mirrorjs-widgets/button.js"></script>
+    <script src="./build/mirrorjs-widgets/label.js"></script>
+    <script src="./build/mirrorjs-widgets/dialog.js"></script>
+    <script src="./build/mirrorjs-widgets/combobox.js"></script>
+
+    <script src="./build/MVVMApp.js"></script>
+
+    <script type="text/javascript">
+        var MVVMApp = require("MVVMApp");
+
+        $(document).ready(function ()
+        {
+            /* mirrorJS.app.local( <UI local connector>( <frontend>, <channel> ), <callback>, <conf> ); */
+            var myApp = new mirrorjs.app.local(new mirrorJS.ui.connectors.local("html" /*, loopback */), MVVMApp);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
