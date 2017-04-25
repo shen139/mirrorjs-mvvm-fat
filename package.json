@@ -27,7 +27,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-less-browserify": "0.0.3",
     "parallelshell": "^2.0.0",
-    "mirrorjs": "^0.3.0",
+    "mirrorjs": "^0.3.1",
     "mirrorjs-widgets": "0.0.1"
   },
   "engines": {
